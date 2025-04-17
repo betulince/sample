@@ -1,6 +1,6 @@
 package com.handle.tasks.controller
 
-import com.handle.tasks.api.HandlerApi
+import com.handle.tasks.api.OrchestratorApi
 import com.handle.tasks.schema.Parameters
 import com.handle.tasks.schema.Request
 import com.handle.tasks.schema.Response
@@ -11,7 +11,7 @@ import io.reactivex.Single
 import java.time.Clock
 
 @Controller("/v1")
-class HandlerController : HandlerApi {
+class OrchestratorController : OrchestratorApi {
 
     private val clock = Clock.systemDefaultZone()
     private val ulid = ULID()

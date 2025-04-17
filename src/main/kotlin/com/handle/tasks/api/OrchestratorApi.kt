@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.Parameter
 import org.jetbrains.annotations.NotNull
 import javax.validation.Valid
 
-interface HandlerApi {
+interface OrchestratorApi {
     @Post(value = "/tasks", produces = ["application/json"], consumes = ["application/json"])
     fun submit(
         @NotNull @Parameter(description = "Parameters required to submit a task") @Body body: @Valid Request

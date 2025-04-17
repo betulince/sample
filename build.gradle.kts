@@ -27,6 +27,8 @@ dependencies {
 
     implementation("io.micronaut.serde:micronaut-serde-processor")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.serde:micronaut-serde-api")
+    implementation("io.micronaut.serde:micronaut-serde-bson")
 
     kapt("io.micronaut.openapi:micronaut-openapi:4.9.0")
     implementation("io.micronaut.openapi:micronaut-openapi:4.9.0")
@@ -37,6 +39,12 @@ dependencies {
     implementation("io.micronaut.rxjava2:micronaut-rxjava2-http-client")
 
     implementation("com.offbytwo.ulid:ulid:0.1.0")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
+    testImplementation("org.assertj:assertj-core:3.24.2")
+    testImplementation(kotlin("test"))
+
 
 }
 
